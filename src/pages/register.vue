@@ -9,10 +9,10 @@
     <p class="input-box" @click="toggleKeyboard">
       <input type="number" readonly placeholder="手机号" v-model="phone">
       <span class="fake-wrap">
-        <span class="fake-number" ref="fakeInputEl" v-for="(value,index) in _phone" :key="'f+'+value">{{value}}</span>
+        <span class="fake-number"  v-for="(value,index) in _phone" :key="'f+'+value">{{value}}</span>
         <span class="fake-cursor" v-show="showKeyBoard" ></span>
       </span>
-      <input type="number" class="fake-input" v-model="phone">
+      <input type="number" readonly class="fake-input" v-model="phone">
     </p>
     <div class="btn-box" :class="{'enter':showKeyBoard,'leave':!showKeyBoard}">
       <button class="m-btn default login"><router-link :to="'/login'">登录</router-link></button>

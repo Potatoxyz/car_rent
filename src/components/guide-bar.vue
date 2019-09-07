@@ -1,8 +1,6 @@
 <template>
     <div class="guide-bar">
-      <span class="back" @click="goBack">
-         <img src="@/assets/images/back_arrow_white.png" alt="">
-      </span>
+      <img class="back"  @click="goBack" src="@/assets/images/back_arrow_white.png" alt="">
       <span>{{title}}</span>
     </div>
 </template>
@@ -32,15 +30,14 @@
   justify-content: center;
   padding: 10px 0;
   font-size: 16px;
+  height: 40px;
+  box-sizing: border-box;
   .back{
-    position: absolute;
-    height: 16px;
-    width: 10px;
-    left: 0;
-    top: 10px;
-    img{
-      width: 100%;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      width: 14px;
+      left: 0;
     }
-  }
 }
 </style>
