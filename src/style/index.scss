@@ -6,6 +6,44 @@ body{
   background: #000;
   color:#fff;
 }
+a{
+  text-decoration: none;
+  &:active,&:visited,&:link{
+    color:unset!important;
+  }
+}
 em{
   font-style: normal;
 }
+#app{
+  min-height: 100vh;
+}
+.page-wrap{
+  padding:0 24px;
+  position: relative;
+}
+.m-btn{
+  border: none;
+  outline: none;
+  color:#fff;
+  height:44px;
+  line-height: 44px;
+  border-radius:10px;
+  &.active{
+    background: #FF3535;
+  }
+  &.inactive{
+    background: #F28C8D;
+  }
+  &.default{
+    background: transparent;
+    color: #A6A6B3;
+  }
+}
+.m-loading{
+  //background: #fff!important;
+  //.van-toast{
+  //  color:#535A73;
+  //}
+}
+
