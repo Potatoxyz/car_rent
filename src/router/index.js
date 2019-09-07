@@ -13,8 +13,8 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '',
-      redirect:'/register'
+      path: '*',
+      redirect:'/login'
     },
     {
       path: '/register',
