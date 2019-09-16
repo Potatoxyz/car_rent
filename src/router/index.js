@@ -6,6 +6,7 @@ const VerifyCode=()=>import('@/pages/verifyCode');
 const SetPwd=()=>import('@/pages/setPwd');
 const RegisterSuccess=()=>import('@/pages/registerSuccess');
 const Login=()=>import('@/pages/login');
+const Home=()=>import('@/pages/home');
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home
     }
   ]
 })
